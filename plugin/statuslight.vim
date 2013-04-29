@@ -140,6 +140,7 @@ au BufLeave * call statuslight#HideStatusLine()
 " Check NERDTree for highlight changes, similar to above
 au BufEnter * call statuslight#HighlightNERD()
 au BufLeave * call statuslight#HighlightNERD()
+au BufCreate * call statuslight#HighlightNERD()
 
 " Reset colors when we start
 au VimEnter * call statuslight#ResetStatusLineColor()
